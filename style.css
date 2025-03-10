@@ -1,0 +1,46 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #ffe4e1;
+}
+
+#photoGallery {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+.photo {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#stickerContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#giftBox {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 20px;
+    background-color: gold;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#giftBox:hover {
+    transform: scale(1.1);
+}
+
+#hiddenMessage {
+    font-size: 2rem;
+    color: red;
+    margin-top: 20px;
+    display: none;
+}
